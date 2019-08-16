@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NearestPointTableViewCell" rowHeight="95" id="KGk-i7-Jjw" customClass="NearestPointTableViewCell" customModule="RapidoMapPoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nus-YQ-BI8">
+                        <rect key="frame" x="10" y="15" width="302" height="64.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wA-HJ-vUs">
+                                <rect key="frame" x="5" y="10" width="292" height="3.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaL-Ch-ovx">
+                                <rect key="frame" x="5" y="33.5" width="292" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yUf-Xb-hgr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EaL-Ch-ovx" secondAttribute="trailing" constant="5" id="7qp-UK-zJI"/>
+                            <constraint firstItem="EaL-Ch-ovx" firstAttribute="leading" secondItem="Nus-YQ-BI8" secondAttribute="leading" constant="5" id="AHZ-7D-ypI"/>
+                            <constraint firstItem="9wA-HJ-vUs" firstAttribute="top" secondItem="Nus-YQ-BI8" secondAttribute="top" constant="10" id="FWT-M1-IJU"/>
+                            <constraint firstItem="9wA-HJ-vUs" firstAttribute="leading" secondItem="Nus-YQ-BI8" secondAttribute="leading" constant="5" id="e4N-67-1tC"/>
+                            <constraint firstAttribute="trailing" secondItem="9wA-HJ-vUs" secondAttribute="trailing" constant="5" id="k2W-Ec-wov"/>
+                            <constraint firstAttribute="bottom" secondItem="EaL-Ch-ovx" secondAttribute="bottom" constant="10" id="soH-01-Xsy"/>
+                            <constraint firstItem="EaL-Ch-ovx" firstAttribute="top" secondItem="9wA-HJ-vUs" secondAttribute="bottom" constant="20" id="xsD-x1-ZMb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Nus-YQ-BI8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="KO3-7J-3xH"/>
+                    <constraint firstItem="Nus-YQ-BI8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Vc2-ce-v9n"/>
+                    <constraint firstAttribute="trailing" secondItem="Nus-YQ-BI8" secondAttribute="trailing" constant="10" id="aiH-Cm-zHm"/>
+                    <constraint firstAttribute="bottom" secondItem="Nus-YQ-BI8" secondAttribute="bottom" constant="15" id="v5R-qt-vrX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aAddressLabel" destination="9wA-HJ-vUs" id="L9W-na-zQr"/>
+                <outlet property="aContainerView" destination="Nus-YQ-BI8" id="mLh-bK-pNF"/>
+                <outlet property="aLatLongLabel" destination="EaL-Ch-ovx" id="Wax-xY-9gI"/>
+            </connections>
+            <point key="canvasLocation" x="59.420289855072468" y="64.620535714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

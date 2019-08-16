@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="112" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="RapidoMapPoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7K3-Nv-rRz">
+                        <rect key="frame" x="20" y="15" width="283" height="69.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP6-2r-lsm">
+                                <rect key="frame" x="10" y="10" width="225" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFc-wZ-uRh">
+                                <rect key="frame" x="10" y="38.5" width="225" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OFJ-Aa-bYv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX5-ko-eah">
+                                <rect key="frame" x="243" y="10" width="30" height="49.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="tx5-CV-ENl"/>
+                                </constraints>
+                                <state key="normal" image="deleteIcon"/>
+                                <connections>
+                                    <action selector="deleteButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YL2-yY-Age"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fFc-wZ-uRh" secondAttribute="bottom" constant="10" id="2d7-KO-lhC"/>
+                            <constraint firstAttribute="bottom" secondItem="PX5-ko-eah" secondAttribute="bottom" constant="10" id="AoM-eR-2gs"/>
+                            <constraint firstItem="PX5-ko-eah" firstAttribute="top" secondItem="7K3-Nv-rRz" secondAttribute="top" constant="10" id="Gz9-q8-sK7"/>
+                            <constraint firstItem="NP6-2r-lsm" firstAttribute="leading" secondItem="7K3-Nv-rRz" secondAttribute="leading" constant="10" id="IMt-H1-EyP"/>
+                            <constraint firstItem="fFc-wZ-uRh" firstAttribute="top" secondItem="NP6-2r-lsm" secondAttribute="bottom" constant="10" id="JSL-oO-OCB"/>
+                            <constraint firstItem="NP6-2r-lsm" firstAttribute="top" secondItem="7K3-Nv-rRz" secondAttribute="top" constant="10" id="VfQ-jl-bL7"/>
+                            <constraint firstItem="fFc-wZ-uRh" firstAttribute="trailing" secondItem="NP6-2r-lsm" secondAttribute="trailing" id="Yfg-aY-Von"/>
+                            <constraint firstItem="fFc-wZ-uRh" firstAttribute="leading" secondItem="7K3-Nv-rRz" secondAttribute="leading" constant="10" id="k24-I6-pLa"/>
+                            <constraint firstAttribute="trailing" secondItem="PX5-ko-eah" secondAttribute="trailing" constant="10" id="vD5-O6-Yu7"/>
+                            <constraint firstItem="PX5-ko-eah" firstAttribute="leading" secondItem="NP6-2r-lsm" secondAttribute="trailing" constant="8" id="xoE-wC-NS5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7K3-Nv-rRz" secondAttribute="trailing" constant="20" id="Dg0-Pp-jq8"/>
+                    <constraint firstAttribute="bottom" secondItem="7K3-Nv-rRz" secondAttribute="bottom" constant="15" id="KoQ-sm-vxQ"/>
+                    <constraint firstItem="7K3-Nv-rRz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rX1-Rv-wgb"/>
+                    <constraint firstItem="7K3-Nv-rRz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="sEC-JH-AWd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aAddressLabel" destination="NP6-2r-lsm" id="VQY-D3-sYM"/>
+                <outlet property="aContainerView" destination="7K3-Nv-rRz" id="eh3-D6-mbu"/>
+                <outlet property="aDeleteButton" destination="PX5-ko-eah" id="gGC-DG-Fmy"/>
+                <outlet property="aLatLongLabel" destination="fFc-wZ-uRh" id="LY4-nA-s23"/>
+            </connections>
+            <point key="canvasLocation" x="60.14492753623189" y="70.3125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="deleteIcon" width="32" height="32"/>
+    </resources>
+</document>

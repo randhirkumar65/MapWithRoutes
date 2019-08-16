@@ -1,0 +1,6 @@
+framework module Pods_MapRoutesPOC {
+  umbrella header "Pods-MapRoutesPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
